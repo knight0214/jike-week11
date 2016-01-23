@@ -1,0 +1,271 @@
+/*基本部分*/
+body,
+nav,
+dd,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Verdana, " Lantinghei SC ", " Hiragino Sans GB ", " Microsoft Yahei ", Helvetica, arial, \5b8b\4f53, sans-serif";
+  box-sizing: border-box;
+}
+body {
+  font-size: 12px;
+}
+strong {
+  font-weight: normal;
+}
+ul,
+li,
+dl,
+dd,
+dt {
+  list-style: none;
+}
+span {
+  display: block;
+}
+em {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+/*通用部分*/
+.bg-blue {
+  background: #1891c5;
+}
+.bg-white {
+  background: #fff;
+}
+.bg-yellow {
+  background: #e6d437;
+}
+.c-black {
+  color: #333;
+}
+.c-red {
+  color: #B7282D;
+}
+.c-white {
+  color: #fff;
+}
+.f-title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.f-num {
+  font-family: 'Arial Black';
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff, -1px -1px #fff;
+}
+.f-text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.f-stext {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.f-xstext {
+  -webkit-text-size-adjust: none;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  white-space: nowrap;
+}
+.b-red {
+  border: 1px solid;
+  border-color: #B7282D;
+}
+.b-black {
+  border: 1px solid;
+  border-color: #B7282D;
+  border-color: #333;
+}
+/*con部分*/
+.con {
+  width: 1020px;
+  height: 220px;
+  margin: 0 auto;
+  padding: 0;
+}
+/*header部分*/
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+.bus-top {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 3px 20px 3px 100px;
+}
+.bus-top h1 {
+  float: left;
+  line-height: 44px;
+}
+.bus-top strong {
+  float: left;
+  line-height: 44px;
+}
+.bus-top p {
+  float: right;
+}
+.bus-top-num {
+  width: auto;
+  height: auto;
+  margin: 1px 10% 0;
+  padding: 0;
+}
+.bus-top-end {
+  width: auto;
+  height: auto;
+  margin: 0 0 0 4%;
+  padding: 0;
+}
+.bus-top-from {
+  width: auto;
+  height: auto;
+  margin: 19px 0 0;
+  padding: 0;
+}
+/*article部分*/
+article {
+  width: 100%;
+  height: 145px;
+  margin: 0;
+  padding: 0;
+}
+.bus-station {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  padding: 3px 10px 0;
+}
+.bus-station li {
+  float: left;
+  overflow: hidden;
+  width: 4.34%;
+  height: 100%;
+  margin: 0;
+  padding: 10px 13px 13px;
+}
+.bus-station li p {
+  width: 16px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: tb-lr;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  word-wrap: break-word;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.stationName-2 {
+  letter-spacing: 61px;
+}
+.stationName-3 {
+  letter-spacing: 22px;
+}
+.stationName-4 {
+  letter-spacing: 9px;
+}
+.bus-road {
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 3px 10px 0;
+}
+.bus-road li {
+  float: left;
+  text-align: center;
+  white-space: nowrap;
+  border-right: 0;
+}
+.bus-road li:last-child {
+  border-right: 1px solid;
+}
+.station-1 {
+  width: 4.34%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.station-2 {
+  width: 8.68%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.station-7 {
+  width: 30.38%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.station-9 {
+  width: 39.06%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.m-l {
+  margin-left: -5px;
+}
+/*footer部分*/
+footer {
+  width: 100%;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+}
+.bus-info {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 3px 20px 3px 47px;
+}
+.bus-info dl {
+  float: left;
+  white-space: nowrap;
+}
+.bus-info dl dt {
+  float: left;
+}
+.server-time {
+  width: auto;
+  height: auto;
+  margin: 0 10%;
+  padding: 0;
+}

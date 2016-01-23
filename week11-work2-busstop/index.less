@@ -1,0 +1,327 @@
+/*基本部分*/
+
+//通用字体
+@font: "Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif";
+//通用颜色
+@black: #333;
+@white: #fff;
+@red: #B7282D;
+@blue: #1891c5;
+@yellow: #e6d437;
+//重置
+body,
+nav,
+dd,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: @font;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+}
+
+strong {
+    font-weight: normal;
+}
+
+ul,
+li,
+dl,
+dd,
+dt {
+    list-style: none;
+}
+
+span {
+    display: block;
+}
+
+em {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    font-size: 100%;
+    font-weight: 400;
+}
+
+//通用函数
+//骨架参数
+.whmp(@width: auto, @height: auto, @margin: 0, @padding: 0) {
+    width: @width;
+    height: @height;
+    margin: @margin;
+    padding: @padding;
+}
+
+//绝对定位
+.ab-lb(@left: 0, @bottom: 0) {
+    position: absolute;
+    left: @left;
+    bottom: @bottom;
+}
+
+.ab-lt(@left: 0, @top: 0) {
+    position: absolute;
+    left: @left;
+    top: @top;
+}
+
+.ab-rt(@right: 0, @top: 0) {
+    position: absolute;
+    right: @right;
+    top: @top;
+}
+
+//边框
+.border(@border-width: 0, @border-color: @red) {
+    border: @border-width solid @border-color;
+}
+
+
+/*通用部分*/
+
+//背景
+.bg-blue {
+    background: @blue;
+}
+
+.bg-white {
+    background: @white;
+}
+
+.bg-yellow {
+    background: @yellow;
+}
+
+//文字颜色
+.c-black {
+    color: @black;
+}
+
+.c-red {
+    color: @red;
+}
+
+.c-white {
+    color: @white;
+}
+
+//文字基础样式
+.font(@font-size: 12px, @font-weight: 500, @letter-spacing: 3px) {
+    font-size: @font-size;
+    font-weight: @font-weight;
+    letter-spacing: @letter-spacing;
+}
+
+//文字边框
+.textBorder(@textb-width: 1px, @textb-color: @white) {
+    text-shadow: @textb-width 0 @white, -@textb-width 0 @white, 0 @textb-width @white, 0 -@textb-width @white, @textb-width -@textb-width @white, -@textb-width @textb-width @white, @textb-width @textb-width @white, -@textb-width -@textb-width @white;
+}
+
+//字体样式
+.f-title {
+    .font(30px, 600);
+}
+
+.f-num {
+    font-family: 'Arial Black';
+    .font(36px, 900);
+    .textBorder(1px);
+}
+
+.f-text {
+    .font(18px, 600);
+}
+
+.f-stext {
+    .font(16px);
+}
+
+.f-xstext {
+    -webkit-text-size-adjust: none;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    white-space: nowrap;
+}
+
+//纵向文字
+.writing-mode() {
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+//缩进
+.m-s(@margin-l:5px){
+	margin-left: -@margin-l;
+}
+//边框
+.b-red {
+    border: 1px solid;
+    border-color: @red;
+}
+.b-black{
+	.b-red;
+	border-color: @black;
+}
+
+/*con部分*/
+
+.con {
+    .whmp(1020px, 220px, 0 auto);
+}
+
+
+/*header部分*/
+
+@headerHeight: 50px;
+@hesderP: 3px;
+.headerDef() {
+    float: left;
+    line-height: (@headerHeight - 2*@hesderP);
+}
+
+header {
+    .whmp(100%, @headerHeight);
+}
+
+.bus-top {
+    .whmp(100%, 100%, @padding: @hesderP 20px @hesderP 100px);
+    h1 {
+        .headerDef;
+    }
+    strong {
+        .headerDef;
+    }
+    p {
+        float: right;
+    }
+}
+
+
+.bus-top-num {
+    .whmp(@margin: 1px 10% 0);
+}
+
+.bus-top-end {
+    .whmp(@margin: 0 0 0 4%);
+}
+
+.bus-top-from {
+    .whmp(@margin: 19px 0 0);
+}
+
+
+/*article部分*/
+
+article {
+    .whmp(100%, 145px);
+}
+
+.bus-station {
+    .whmp(100%, 80%, @padding: 3px 10px 0);
+    li {
+        float: left;
+        overflow: hidden;
+        .whmp(4.34%, 100%,@padding:10px 13px 13px);
+        p {
+            .whmp(16px,@margin:0 auto);
+            .writing-mode;
+            line-height: 16px;
+
+
+        }
+    }
+}
+
+.stationName-2 {
+    letter-spacing: 61px;
+}
+
+.stationName-3 {
+    letter-spacing: 22px;
+}
+
+.stationName-4 {
+    letter-spacing: 9px;
+}
+
+.bus-road {
+    .whmp(100%, 20%, @padding: 3px 10px 0);
+    li {
+        float: left;
+        text-align: center;
+        white-space: nowrap;
+        border-right: 0;
+        &:last-child {
+            border-right:1px solid;
+        }
+
+    }
+}
+
+.station-1 {
+    .whmp(4.34%);
+}
+
+.station-2 {
+    .whmp(8.68%);
+}
+
+.station-7 {
+    .whmp(30.38%);
+}
+
+.station-9 {
+    .whmp(39.06%);
+}
+.m-l{
+	.m-s;
+}
+
+/*footer部分*/
+@footerHeight:25px;
+@footerP:3px;
+footer {
+    .whmp(100%, @footerHeight);
+}
+.bus-info{
+	 .whmp(100%, 100%, @padding: @footerP 20px @footerP 47px);
+	 dl{
+	 	float: left;
+	 	white-space: nowrap;
+	 	dt{
+	 		float: left;
+	 	}
+	 }
+}
+.server-time{
+	.whmp(@margin: 0 10%);
+}
